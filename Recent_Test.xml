@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Popbitch Safari">
+  <test  name="Signup_from_FUN" >
+   <parameter name="browser" value="safari" />
+    <classes>
+  
+ <class name="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice"/>
+   	 
+    </classes>
+  </test> 
+  </suite>

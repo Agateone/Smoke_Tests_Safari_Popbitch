@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Popbitch Chrome 2]">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Stepdef.Popbitch.POPSMO19_transaction_from_newpublication_notice">
+        <methods>
+          <include name="wallet_balance_is_detucted_by_twentyp"/>
+        </methods>
+      </class> <!-- Stepdef.Popbitch.POPSMO19_transaction_from_newpublication_notice -->
+      <class name="Stepdef.Popbitch.POPSMO15_Wallet_balance_same_on_reading_article">
+        <methods>
+          <include name="the_wallet_balance_is_same_across_the_publications"/>
+          <include name="i_navigate_to_cornwall"/>
+        </methods>
+      </class> <!-- Stepdef.Popbitch.POPSMO15_Wallet_balance_same_on_reading_article -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [ Popbitch Chrome 2] -->

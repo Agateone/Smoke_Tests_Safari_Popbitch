@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-_Popbitch_Safari">
+              <span class="suite-name border-failed"> Popbitch Safari</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-_Popbitch_Safari">
+                    <span>Recent_Test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-_Popbitch_Safari">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-_Popbitch_Safari">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-_Popbitch_Safari">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-_Popbitch_Safari">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-_Popbitch_Safari">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-_Popbitch_Safari">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-_Popbitch_Safari" class="hide-methods failed suite-_Popbitch_Safari"> (hide)</a> <!-- hide-methods failed suite-_Popbitch_Safari -->
+                      <a href="#" panel-name="suite-_Popbitch_Safari" class="show-methods failed suite-_Popbitch_Safari"> (show)</a> <!-- show-methods failed suite-_Popbitch_Safari -->
+                    </span>
+                    <div class="method-list-content failed suite-_Popbitch_Safari">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="finish_notice_appears">finish_notice_appears</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="i_get_a_funded_axate_wallet_with_one_pound_in_it">i_get_a_funded_axate_wallet_with_one_pound_in_it</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-_Popbitch_Safari -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-_Popbitch_Safari" class="hide-methods passed suite-_Popbitch_Safari"> (hide)</a> <!-- hide-methods passed suite-_Popbitch_Safari -->
+                      <a href="#" panel-name="suite-_Popbitch_Safari" class="show-methods passed suite-_Popbitch_Safari"> (show)</a> <!-- show-methods passed suite-_Popbitch_Safari -->
+                    </span>
+                    <div class="method-list-content passed suite-_Popbitch_Safari">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(safari)">i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(safari)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="i_enter_all_the_required_details_on_step_one_and_click_on_continue">i_enter_all_the_required_details_on_step_one_and_click_on_continue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="navigated_to_the_same_article">navigated_to_the_same_article</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-_Popbitch_Safari" title="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice" hash-for-method="top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue">top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-_Popbitch_Safari -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-_Popbitch_Safari" class="panel _Popbitch_Safari">
+          <div class="suite-_Popbitch_Safari-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="finish_notice_appears">
+                  </a> <!-- finish_notice_appears -->
+                  <span class="method-name">finish_notice_appears</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:ae:ed53:7de2:9807%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885
+*** Element info: {Using=id, value=finish_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Finish_Notice_elements.Verify_finish_notice_appears(Finish_Notice_elements.java:82)
+	at Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.finish_notice_appears(POPSMO01_Popbitch_register_from_first_use_notice.java:102)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_get_a_funded_axate_wallet_with_one_pound_in_it">
+                  </a> <!-- i_get_a_funded_axate_wallet_with_one_pound_in_it -->
+                  <span class="method-name">i_get_a_funded_axate_wallet_with_one_pound_in_it</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:ae:ed53:7de2:9807%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Elements.Wallet_Elements.Click_On_popbitch_staging_agate_poster(Wallet_Elements.java:42)
+	at Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.i_get_a_funded_axate_wallet_with_one_pound_in_it(POPSMO01_Popbitch_register_from_first_use_notice.java:82)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-_Popbitch_Safari-class-failed -->
+          <div class="suite-_Popbitch_Safari-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(safari)">
+                  </a> <!-- i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(safari) -->
+                  <span class="method-name">i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</span>
+                  <span class="parameters">(safari)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_enter_all_the_required_details_on_step_one_and_click_on_continue">
+                  </a> <!-- i_enter_all_the_required_details_on_step_one_and_click_on_continue -->
+                  <span class="method-name">i_enter_all_the_required_details_on_step_one_and_click_on_continue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigated_to_the_same_article">
+                  </a> <!-- navigated_to_the_same_article -->
+                  <span class="method-name">navigated_to_the_same_article</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue">
+                  </a> <!-- top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue -->
+                  <span class="method-name">top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-_Popbitch_Safari-class-passed -->
+        </div> <!-- panel _Popbitch_Safari -->
+        <div panel-name="test-xml-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/jay/eclipse-workspace/Smoke_Test_Cases_Safari_Local/Recent_Test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot; Popbitch Safari&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Signup_from_FUN&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Signup_from_FUN --&gt;
+&lt;/suite&gt; &lt;!--  Popbitch Safari --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for  Popbitch Safari</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Signup_from_FUN (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for  Popbitch Safari</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for  Popbitch Safari</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData__Popbitch_Safari');
+function tableData__Popbitch_Safari() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'i_enter_all_the_required_details_on_step_one_and_click_on_continue')
+data.setCell(0, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(0, 3, 45595);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'i_get_a_funded_axate_wallet_with_one_pound_in_it')
+data.setCell(1, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(1, 3, 20039);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue')
+data.setCell(2, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(2, 3, 17197);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN')
+data.setCell(3, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(3, 3, 16721);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'finish_notice_appears')
+data.setCell(4, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(4, 3, 2012);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'navigated_to_the_same_article')
+data.setCell(5, 2, 'Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice')
+data.setCell(5, 3, 6);
+window.suiteTableData['_Popbitch_Safari']= { tableData: data, tableDiv: 'times-div-_Popbitch_Safari'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-_Popbitch_Safari">
+              </div> <!-- times-div-_Popbitch_Safari -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for  Popbitch Safari</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-_Popbitch_Safari" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(safari)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">i_enter_all_the_required_details_on_step_one_and_click_on_continue</span>
+                <span class="method-start">16724 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</span>
+                <span class="method-start">62320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">i_get_a_funded_axate_wallet_with_one_pound_in_it</span>
+                <span class="method-start">79518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigated_to_the_same_article</span>
+                <span class="method-start">99560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">finish_notice_appears</span>
+                <span class="method-start">99567 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

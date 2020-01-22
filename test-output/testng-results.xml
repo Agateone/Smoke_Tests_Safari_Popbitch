@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name=" Popbitch Safari" duration-ms="101602" started-at="2020-01-22T12:07:41Z" finished-at="2020-01-22T12:09:23Z">
+    <groups>
+    </groups>
+    <test name="Signup_from_FUN" duration-ms="101602" started-at="2020-01-22T12:07:41Z" finished-at="2020-01-22T12:09:23Z">
+      <class name="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice">
+        <test-method status="PASS" signature="i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(java.lang.String)[pri:1, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN" duration-ms="16721" started-at="2020-01-22T12:07:42Z" finished-at="2020-01-22T12:07:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN -->
+        <test-method status="PASS" signature="i_enter_all_the_required_details_on_step_one_and_click_on_continue()[pri:2, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="i_enter_all_the_required_details_on_step_one_and_click_on_continue" duration-ms="45595" started-at="2020-01-22T12:07:58Z" finished-at="2020-01-22T12:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_enter_all_the_required_details_on_step_one_and_click_on_continue -->
+        <test-method status="PASS" signature="top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue()[pri:3, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue" duration-ms="17197" started-at="2020-01-22T12:08:44Z" finished-at="2020-01-22T12:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue -->
+        <test-method status="FAIL" signature="i_get_a_funded_axate_wallet_with_one_pound_in_it()[pri:4, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="i_get_a_funded_axate_wallet_with_one_pound_in_it" duration-ms="20039" started-at="2020-01-22T12:09:01Z" finished-at="2020-01-22T12:09:21Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jayarees-MacBook-Pro.local', ip: 'fe80:0:0:0:ae:ed53:7de2:9807%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jayarees-MacBook-Pro.local', ip: 'fe80:0:0:0:ae:ed53:7de2:9807%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Elements.Wallet_Elements.Click_On_popbitch_staging_agate_poster(Wallet_Elements.java:42)
+at Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.i_get_a_funded_axate_wallet_with_one_pound_in_it(POPSMO01_Popbitch_register_from_first_use_notice.java:82)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_get_a_funded_axate_wallet_with_one_pound_in_it -->
+        <test-method status="PASS" signature="navigated_to_the_same_article()[pri:5, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="navigated_to_the_same_article" duration-ms="6" started-at="2020-01-22T12:09:21Z" finished-at="2020-01-22T12:09:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigated_to_the_same_article -->
+        <test-method status="FAIL" signature="finish_notice_appears()[pri:6, instance:Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@210366b4]" name="finish_notice_appears" duration-ms="2012" started-at="2020-01-22T12:09:21Z" finished-at="2020-01-22T12:09:23Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jayarees-MacBook-Pro.local', ip: 'fe80:0:0:0:ae:ed53:7de2:9807%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885
+*** Element info: {Using=id, value=finish_button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Jayarees-MacBook-Pro.local', ip: 'fe80:0:0:0:ae:ed53:7de2:9807%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.0.3, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 18G1012, safari:platformVersion: 10.14.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: E944F11F-ADC6-4049-8C5A-CF1A313F6885
+*** Element info: {Using=id, value=finish_button}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Elements.Finish_Notice_elements.Verify_finish_notice_appears(Finish_Notice_elements.java:82)
+at Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.finish_notice_appears(POPSMO01_Popbitch_register_from_first_use_notice.java:102)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish_notice_appears -->
+      </class> <!-- Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice -->
+    </test> <!-- Signup_from_FUN -->
+  </suite> <!--  Popbitch Safari -->
+</testng-results>

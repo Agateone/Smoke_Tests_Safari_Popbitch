@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Popbitch Chrome">
+  <test  name="Smoke Tests" >
+   <parameter name="browser" value="chrome" />
+    <classes>
+  
+   	<class name="Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice"/>
+   	<class name="Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet"/>
+   	<class name="Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page"/>
+   	<class name="Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds"/>
+   	<class name="Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment"/>
+   	<class name="Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country"/>
+   	<class name="Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2"/>
+   	<class name="Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US"/>
+   	
+   	
+   
+   	
+   	 
+    </classes>
+  </test> 
+  </suite>

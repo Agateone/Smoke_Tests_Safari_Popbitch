@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>TestNG:  Smoke Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 11 17:29:48 GMT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>234 seconds (234757 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.authorise_charge_notice_is_displayed()'><b>authorise_charge_notice_is_displayed</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>8</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.click_ok_on_the_authorise_charge_notice()'><b>click_ok_on_the_authorise_charge_notice</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>1</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_acheive_freeperiod_on_popbitch()'><b>i_acheive_freeperiod_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>14</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back<br>Parameters: chrome</td>
+<td></td>
+<td>12</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back<br>Parameters: chrome</td>
+<td></td>
+<td>8</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed.i_am_a_user_of_Axate_and_in_a_logged_out_state()'><b>i_am_a_user_of_Axate_and_in_a_logged_out_state</b><br>Test class: Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed<br>Parameters: chrome</td>
+<td></td>
+<td>1</td>
+<td>Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed@1f28c152</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_display_the_datetime_of_the_article_read()'><b>i_display_the_datetime_of_the_article_read</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_display_the_datetime_of_the_first_article_read()'><b>i_display_the_datetime_of_the_first_article_read</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_flip_the_wallet()'><b>i_flip_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_flip_the_wallet()'><b>i_flip_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed.i_navigate_to_a_premium_article_on_popbitch()'><b>i_navigate_to_a_premium_article_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed</td>
+<td></td>
+<td>1</td>
+<td>Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed@1f28c152</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.i_open_the_flipped_wallet()'><b>i_open_the_flipped_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>9</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.i_open_the_flipped_wallet()'><b>i_open_the_flipped_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>11</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_open_the_wallet()'><b>i_open_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_open_the_wallet()'><b>i_open_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_read_an_article_on_popbitch()'><b>i_read_an_article_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>6</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.i_register_successfully_on_popbitch_with_one_pound()'><b>i_register_successfully_on_popbitch_with_one_pound</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>22</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.i_register_successfully_on_popbitch_with_one_pound()'><b>i_register_successfully_on_popbitch_with_one_pound</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>22</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.i_register_successfully_on_popbitch_with_one_pound()'><b>i_register_successfully_on_popbitch_with_one_pound</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>22</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.i_register_successfully_on_popbitch_with_one_pound()'><b>i_register_successfully_on_popbitch_with_one_pound</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>22</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.navigate_to_another_premium_article_on_popbitch()'><b>navigate_to_another_premium_article_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>1</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.navigate_to_another_premium_article_on_popbitch()'><b>navigate_to_another_premium_article_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.opt_Ask_me_everytime_on_the_autocharge_button_on_the_wallet()'><b>opt_Ask_me_everytime_on_the_autocharge_button_on_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.opt_Ask_me_everytime_on_the_finish_notice_and_click_ok()'><b>opt_Ask_me_everytime_on_the_finish_notice_and_click_ok</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>5</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.opt_Just_charge_me_on_the_autocharge_button_on_the_wallet()'><b>opt_Just_charge_me_on_the_autocharge_button_on_the_wallet</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>6</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off.opt_just_charge_me_on_the_finish_notice_and_click_ok()'><b>opt_just_charge_me_on_the_finish_notice_and_click_ok</b><br>Test class: Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off</td>
+<td></td>
+<td>12</td>
+<td>Stepdef.Popbitch.POPSMO23_Auto_Charge_Button_Back_Wallet_Off@731a74c</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed.the_first_use_notice_is_displayed()'><b>the_first_use_notice_is_displayed</b><br>Test class: Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed</td>
+<td></td>
+<td>2</td>
+<td>Stepdef.Popbitch.POPSMO25_First_Use_Notice_Displayed@1f28c152</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back.the_updates_on_date_on_the_back_of_the_wallet_is_seven_days_from_datetime_noted_when_I_read_the_first_article()'><b>the_updates_on_date_on_the_back_of_the_wallet_is_seven_days_from_datetime_noted_when_I_read_the_first_article</b><br>Test class: Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO21_Read_Updates_On_Date_Wallet_Back@5a8e6209</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back.the_updates_on_date_on_the_back_of_the_wallet_is_seven_days_from_datetime_noted_when_I_read_the_first_article()'><b>the_updates_on_date_on_the_back_of_the_wallet_is_seven_days_from_datetime_noted_when_I_read_the_first_article</b><br>Test class: Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back</td>
+<td></td>
+<td>2</td>
+<td>Stepdef.Popbitch.POPSMO22_Free_Point_Updates_On_Date_Wallet_Back@4b4523f8</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On.wallet_balance_is_detucted_by_twentyfivep()'><b>wallet_balance_is_detucted_by_twentyfivep</b><br>Test class: Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO24_Auto_Charge_Button_Back_Wallet_On@369f73a2</td></tr>
+</table><p>
+</body>
+</html>

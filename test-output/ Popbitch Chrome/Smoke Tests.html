@@ -1,0 +1,951 @@
+<html>
+<head>
+<title>TestNG:  Smoke Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 12 12:02:14 GMT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>295 seconds (295339 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.an_ADD_funds_notice_is_displayed()'><b>an_ADD_funds_notice_is_displayed</b><br>Test class: Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div/div/div/div/div/button/span[2]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52309}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: ee60e0950be14e37ee17985b5009b3c0
+*** Element info: {Using=xpath, value=/html/body/div/div/div/div/div/div/div/button/span[2]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Add_Funds_Notice.Add_funds_notice_displayed(Add_Funds_Notice.java:33)
+	at Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.an_ADD_funds_notice_is_displayed(POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.java:134)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521746054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521746054'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div/div/div/div/div/button/span[2]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52309}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: ee60e0950be14e37ee17985b5009b3c0
+*** Element info: {Using=xpath, value=/html/body/div/div/div/div/div/div/div/button/span[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Add_Funds_Notice.Add_funds_notice_displayed(Add_Funds_Notice.java:33)
+	at Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.an_ADD_funds_notice_is_displayed(POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment@67b92f0a</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.enter_valid_card_details()'><b>enter_valid_card_details</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: braintree-option__label (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Elements.Register_Page_Elements1.Registration_Step2_without_continue(Register_Page_Elements1.java:118)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.enter_valid_card_details(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:113)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;braintree-option__label&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=class name, value=braintree-option__label}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189496672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189496672'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: braintree-option__label (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Elements.Register_Page_Elements1.Registration_Step2_without_continue(Register_Page_Elements1.java:118)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.enter_valid_card_details(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;braintree-option__label&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=class name, value=braintree-option__label}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+</pre></div></td>
+<td>20</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.finish_notice_appears()'><b>finish_notice_appears</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;iframe__popup_notices&quot;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52200}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 66e09af313e7a1a781aaee700ff3f54b
+*** Element info: {Using=xpath, value=//*[@id=&quot;iframe__popup_notices&quot;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Finish_Notice_elements.Verify_finish_notice_appears(Finish_Notice_elements.java:80)
+	at Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.finish_notice_appears(POPSMO03_Popbitch_register_from_login_page.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904208473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904208473'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;iframe__popup_notices&quot;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52200}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 66e09af313e7a1a781aaee700ff3f54b
+*** Element info: {Using=xpath, value=//*[@id=&quot;iframe__popup_notices&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Finish_Notice_elements.Verify_finish_notice_appears(Finish_Notice_elements.java:80)
+	at Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.finish_notice_appears(POPSMO03_Popbitch_register_from_login_page.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2<br>Parameters: chrome</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: btn_cta (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Elements.Popbitch_First_Use_Notice_Elements.Click_On_Popbitch_First_Use_Notice_Create_Wallet(Popbitch_First_Use_Notice_Elements.java:39)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;btn_cta&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=btn_cta}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace577038898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace577038898'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: btn_cta (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Elements.Popbitch_First_Use_Notice_Elements.Click_On_Popbitch_First_Use_Notice_Create_Wallet(Popbitch_First_Use_Notice_Elements.java:39)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;btn_cta&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=btn_cta}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+</pre></div></td>
+<td>26</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_select_country_as_United_states_from_the_drop_down_on_reg_page_two()'><b>i_select_country_as_United_states_from_the_drop_down_on_reg_page_two</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_select_country_as_United_states_from_the_drop_down_on_reg_page_two(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:122)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace300111306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace300111306'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_select_country_as_United_states_from_the_drop_down_on_reg_page_two(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.navigated_to_the_same_article()'><b>navigated_to_the_same_article</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td><div><pre>java.lang.AssertionError: expected [https://popbitch.com/2019/11/royal-blush/] but found [https://popbitch.com/2019/11/royal-blush/undefined]
+	at Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.navigated_to_the_same_article(POPSMO03_Popbitch_register_from_login_page.java:146)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689458432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689458432'><pre>java.lang.AssertionError: expected [https://popbitch.com/2019/11/royal-blush/] but found [https://popbitch.com/2019/11/royal-blush/undefined]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.navigated_to_the_same_article(POPSMO03_Popbitch_register_from_login_page.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.postcode_is_displayed()'><b>postcode_is_displayed</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.postcode_is_displayed(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:142)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324701295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324701295'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.postcode_is_displayed(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.state_is_displayed()'><b>state_is_displayed</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.state_is_displayed(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:131)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598284487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace598284487'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;country&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Jayarees-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:45b:7e42:3763:57fc%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600229 (3fae4d0cda5334..., userDataDir: /var/folders/s6/h3svzd2j4f3...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: 3f24e7c7abec3f06755a9ceaf9ec981f
+*** Element info: {Using=id, value=country}
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Elements.Register_Page_Elements1.select_country_US(Register_Page_Elements1.java:148)
+	at Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.state_is_displayed(POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.I_click_on_register_here_on_the_login_page()'><b>I_click_on_register_here_on_the_login_page</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.country_in_the_personal_information_page_in_the_account_page_is_spain()'><b>country_in_the_personal_information_page_in_the_account_page_is_spain</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country</td>
+<td></td>
+<td>15</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.country_in_the_personal_information_page_in_the_account_page_is_united_states()'><b>country_in_the_personal_information_page_in_the_account_page_is_united_states</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>12</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.enter_valid_card_details()'><b>enter_valid_card_details</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country</td>
+<td></td>
+<td>3</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.enter_valid_card_details()'><b>enter_valid_card_details</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>3</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.finish_notice_appears()'><b>finish_notice_appears</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.i_am_a_user_of_Axate_and_I_am_on_the_login_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_login_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page<br>Parameters: chrome</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment@67b92f0a</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country<br>Parameters: chrome</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US<br>Parameters: chrome</td>
+<td></td>
+<td>6</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_Wallet_homepages()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_Wallet_homepages</b><br>Test class: Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet<br>Parameters: chrome</td>
+<td></td>
+<td>5</td>
+<td>Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet@3a5ed7a6</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds.i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_Wallet_homepages()'><b>i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_Wallet_homepages</b><br>Test class: Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds<br>Parameters: chrome</td>
+<td></td>
+<td>5</td>
+<td>Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds@1d16f93d</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.i_click_on_one_pound_on_regpage_two()'><b>i_click_on_one_pound_on_regpage_two</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_click_on_one_pound_on_regpage_two()'><b>i_click_on_one_pound_on_regpage_two</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_click_on_one_pound_on_regpage_two()'><b>i_click_on_one_pound_on_regpage_two</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds.i_click_on_three_pounds_on_regpage_two()'><b>i_click_on_three_pounds_on_regpage_two</b><br>Test class: Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds@1d16f93d</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_enter_Zipcode()'><b>i_enter_Zipcode</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</td>
+<td></td>
+<td>14</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet</td>
+<td></td>
+<td>13</td>
+<td>Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet@3a5ed7a6</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td></td>
+<td>13</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds</td>
+<td></td>
+<td>15</td>
+<td>Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds@1d16f93d</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment</td>
+<td></td>
+<td>13</td>
+<td>Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment@67b92f0a</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country</td>
+<td></td>
+<td>13</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2@65e2dbf3</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_enter_all_the_required_details_on_step_one_and_click_on_continue()'><b>i_enter_all_the_required_details_on_step_one_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>12</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_enter_state_as_Alaska()'><b>i_enter_state_as_Alaska</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.i_get_a_funded_axate_wallet_with_one_pound_in_it()'><b>i_get_a_funded_axate_wallet_with_one_pound_in_it</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</td>
+<td></td>
+<td>8</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet.i_get_a_funded_axate_wallet_with_one_pound_in_it()'><b>i_get_a_funded_axate_wallet_with_one_pound_in_it</b><br>Test class: Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet</td>
+<td></td>
+<td>8</td>
+<td>Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet@3a5ed7a6</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.i_get_a_funded_axate_wallet_with_one_pound_in_it()'><b>i_get_a_funded_axate_wallet_with_one_pound_in_it</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td></td>
+<td>10</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.i_get_an_unfunded_axate_wallet_with_zero_pounds_in_it()'><b>i_get_an_unfunded_axate_wallet_with_zero_pounds_in_it</b><br>Test class: Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment</td>
+<td></td>
+<td>4</td>
+<td>Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment@67b92f0a</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US.i_select_country_as_United_states_from_the_drop_down_on_reg_page_two()'><b>i_select_country_as_United_states_from_the_drop_down_on_reg_page_two</b><br>Test class: Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO13_Popbitch_User_Registers_with_Country_As_US@4f970963</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country.i_select_country_as_spain_from_the_drop_down_on_reg_page_two()'><b>i_select_country_as_spain_from_the_drop_down_on_reg_page_two</b><br>Test class: Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO11_Axate_lets_user_select_their_country@2b9627bc</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment.i_skip_the_payment_and_navigating_to_a_premium_article_on_popbitch()'><b>i_skip_the_payment_and_navigating_to_a_premium_article_on_popbitch</b><br>Test class: Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment</td>
+<td></td>
+<td>1</td>
+<td>Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment@67b92f0a</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet.navigated_to_popbitch_com()'><b>navigated_to_popbitch_com</b><br>Test class: Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet@3a5ed7a6</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.navigated_to_the_same_article()'><b>navigated_to_the_same_article</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds.payment_system_displays_card_option()'><b>payment_system_displays_card_option</b><br>Test class: Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds@1d16f93d</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds.payment_system_displays_paypal_option()'><b>payment_system_displays_paypal_option</b><br>Test class: Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds</td>
+<td></td>
+<td>0</td>
+<td>Stepdef.Popbitch.POPSMO05_Popbitch_Payment_system_loads_on_three_pounds@1d16f93d</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice.top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue()'><b>top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice</td>
+<td></td>
+<td>17</td>
+<td>Stepdef.Popbitch.POPSMO01_Popbitch_register_from_first_use_notice@7791a895</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet.top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue()'><b>top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO02_Popbitch_register_from_wallet@3a5ed7a6</td></tr>
+<tr>
+<td title='Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page.top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue()'><b>top_up_with_a_valid_card_in_steptwo_with_one_pound_and_click_on_continue</b><br>Test class: Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page</td>
+<td></td>
+<td>7</td>
+<td>Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page@6325a3ee</td></tr>
+</table><p>
+</body>
+</html>

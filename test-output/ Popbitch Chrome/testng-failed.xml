@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Popbitch Chrome]">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2">
+        <methods>
+          <include name="state_is_displayed"/>
+          <include name="enter_valid_card_details"/>
+          <include name="i_select_country_as_United_states_from_the_drop_down_on_reg_page_two"/>
+          <include name="postcode_is_displayed"/>
+          <include name="i_am_a_user_of_Axate_and_I_am_on_the_registration_page_through_popbitch_FUN" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Stepdef.Popbitch.POPSMO12_State_Postcode_Required_when_US_Selected_on_regpage2 -->
+      <class name="Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment">
+        <methods>
+          <include name="an_ADD_funds_notice_is_displayed"/>
+        </methods>
+      </class> <!-- Stepdef.Popbitch.POPSMO10_Popbitch_Sucessful_user_registration_with_an_empty_wallet_on_skipping_payment -->
+      <class name="Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page">
+        <methods>
+          <include name="navigated_to_the_same_article"/>
+          <include name="finish_notice_appears"/>
+        </methods>
+      </class> <!-- Stepdef.Popbitch.POPSMO03_Popbitch_register_from_login_page -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [ Popbitch Chrome] -->
